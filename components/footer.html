@@ -1,0 +1,58 @@
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-8 col-md-6">
+            <div class="row">
+                <div class="col-md-8 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Greenline Express LLC, 14715 Sugarpine Street, Oregon City OR 97045</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>503-850-9665, +1 (503) 724-5838</p>
+                    <p><i class="fa fa-envelope mr-2"></i>Greenlineexpress@hotmail.com</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-primary mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="services.html"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                        <a class="text-white mb-2" href="advertisements.html"><i class="fa fa-angle-right mr-2"></i>Advertisements</a>
+                        <a class="text-white mb-2" href="drivers.html"><i class="fa fa-angle-right mr-2"></i>Drivers</a>
+                        <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+            <h3 class="text-primary mb-4">About Us</h3>
+            <p>We provide reliable, fast, and cost-effective logistics solutions tailored to your business needs. From local deliveries to nationwide transportation, we ensure safe handling, timely delivery, and complete transparency at every step.</p>
+            <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white footerCopyright py-4">
+    <div class="row">
+        <div class="col-lg-12 text-center mb-3 mb-md-0">&copy; <a
+                href="https://www.greenlineexpress.in">Greenline Express</a> All Rights Reserved. Designed by <a
+                href="https://WebCreatix.com">WebCreatix</a></div>
+    </div>
+</div>
+<a href="https://wa.me/15037245838" class="whatsapp-floating" target="_blank"><i class="fab fa-whatsapp"></i>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+
+        document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+            const linkPage = link.getAttribute("href");
+
+            if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+    </script>

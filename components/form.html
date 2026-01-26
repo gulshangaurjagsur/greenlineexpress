@@ -1,0 +1,61 @@
+<form action="https://formsubmit.co/greenlineexpress@hotmail.com"
+      method="POST"
+      enctype="multipart/form-data">
+
+    <div class="control-group mb-3">
+        <input type="text"
+               class="form-control border-0 p-4"
+               name="name"
+               placeholder="Your Name"
+               required
+               minlength="2">
+    </div>
+
+    <div class="control-group mb-3">
+        <input type="email"
+               class="form-control border-0 p-4"
+               name="email"
+               placeholder="Your Email"
+               required>
+    </div>
+
+    <div class="control-group mb-3">
+        <input type="text"
+               class="form-control border-0 p-4"
+               name="subject"
+               placeholder="Subject"
+               required
+               minlength="3">
+    </div>
+
+    <div class="control-group mb-3">
+        <textarea class="form-control border-0 py-3 px-4"
+                  rows="4"
+                  name="message"
+                  placeholder="Message"
+                  required
+                  minlength="5"></textarea>
+    </div>
+
+    <!-- Resume Upload -->
+    <div class="control-group mb-3">
+        <input type="file" style="height: 60px;"
+               class="form-control border-0 p-3"
+               name="resume"
+               accept=".pdf,.doc,.docx">
+        <small class="text-muted">
+            Upload Resume (PDF, DOC, DOCX)
+        </small>
+    </div>
+
+    <!-- FormSubmit Hidden Fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div>
+        <button class="btn btn-primary py-3 px-4" type="submit">
+            Send Message
+        </button>
+    </div>
+
+</form>
