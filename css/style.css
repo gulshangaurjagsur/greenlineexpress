@@ -9903,3 +9903,8 @@ color: #FF4800
       min-height: 400px;
     }
 }
+.privacyPage h2{
+  display: block;
+  font-size: 18px;
+  margin-top: 32px;
+}
