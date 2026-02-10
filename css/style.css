@@ -9538,13 +9538,25 @@ p,
 }
 
 .jumbotron {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
+  background: url(../img/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   position: relative;
   width: 100%;
+}
+.jumbotron-inner {
+  padding: 100px 0;
+    background-position: top;
+    z-index: 1;
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/logo.jpg);
+}
+@media (max-width: 768px) {
+.jumbotron {
+  background: url(../img/hero-mobile.jpg);
+  background-position: center;
+}
 }
 .jumbotron-add {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/add.jpg);
