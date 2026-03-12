@@ -9538,7 +9538,7 @@ p,
 }
 
 .jumbotron {
-  background: url(../img/hero.jpg);
+  /* background: url(../img/hero.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9554,7 +9554,7 @@ p,
 }
 @media (max-width: 768px) {
 .jumbotron {
-  background: url(../img/hero-mobile.jpg);
+  /* background: url(../img/hero-mobile.jpg); */
   background-position: center;
 }
 }
@@ -9921,3 +9921,103 @@ color: #FF4800
   font-size: 18px;
   margin-top: 32px;
 }
+
+/* ================= HERO SECTION START ================= */
+
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: url('../img/hero-inner.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.90) 40%,
+        rgba(0,0,0,0.70) 100%
+    );
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+/* Subtitle */
+.hero-content .subtitle {
+    color: #ff5e14;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Main Heading */
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff5e14;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Secondary Heading */
+.hero-content h2 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Paragraph */
+.hero-content p {
+    font-size: 17px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        padding: 0 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+}
+
+/* ================= HERO SECTION END ================= */
